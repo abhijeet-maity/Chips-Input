@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.searchBar {
+  width: 60em;
+  padding: 12px 12px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+}
+
+.chips-container {
+  /* padding: 50px; */
+  display: flex;
+  gap: 10px;
+}
+.chips {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4px 6px;
+  padding-left: 15px;
+  background-color: lightgray;
+  border-radius: 50px;
+}
+.btn {
+  padding: 5px;
+  border: none;
+  font-weight: 600;
+  color: red;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 810px) {
+  .searchBar {
+    width: 50em;
+    padding: 12px 12px;
+  }
+  .chips-container {
+    padding: 20px 30px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .app {
+    gap: 30px;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .searchBar {
+    width: 550px;
+    
+  }
+  .chips-container {
+    padding: 20px;
+  }
+  .app {
+    gap: 30px;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .searchBar {
+    width: 400px;
+  }
+  .chips-container {
+    padding: 10px;
+  }
+  .app {
+    gap: 20px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .searchBar {
+    width: 300px;
+  }
+  .chips-container {
+    padding: 10px;
+  }
+  .app {
+    gap: 20px;
+    width: 300px;
+  }
+}
